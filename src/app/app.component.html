@@ -1,0 +1,9 @@
+<div style="display: flex; flex-direction: column" *ngIf="this.pokemonList.length > 0">
+  <div *ngFor="let pokemon of this.pokemonList">
+    <img
+      src="{{ pokemon.sprites[0].sprites[0].sprites.front_default }}"
+      alt="pokemon.name"
+    />
+    {{pokemon.name}}    
+  </div>
+</div>
