@@ -2,6 +2,7 @@ export class PokemonModel {
   public id: String;
   public name: String;
   public url: String;
+  public color: { name: String };
   public sprites: { sprites: Sprites[] }[]
 }
 

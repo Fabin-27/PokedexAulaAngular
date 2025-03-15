@@ -20,7 +20,8 @@ export class PokemonService {
     constructor(private client: HttpClient) {
     }
 
-    public GetPokemons(): Observable<PokeApiResponse<PokemonModel[]>> {
-        return this.client.post<PokeApiResponse<PokemonModel[]>>(PokemonHttpClient.baseUrl, `{"query":"query samplePokeAPIquery {  pokemons: pokemon_v2_pokemonspecies(order_by: {id: asc}) {    name    id    sprites: pokemon_v2_pokemons {      sprites: pokemon_v2_pokemonsprites {        sprites      }    }  }}","operationName":"samplePokeAPIquery"}`);
+    public GetPokemons(): Observable<PokeApiResponse<PokemonModel[]>> { 
+      return this.client.post<PokeApiResponse<PokemonModel[]>>(PokemonHttpClient.baseUrl, `{"query":"query samplePokeAPIquery { pokemons: pokemon_v2_pokemonspecies(order_by: {id: asc}) { id name color: pokemon_v2_pokemoncolor { name } sprites: pokemon_v2_pokemons { sprites: pokemon_v2_pokemonsprites { sprites } } } }","operationName":"samplePokeAPIquery"}`); 
     }
+    
 }
