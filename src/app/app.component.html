@@ -1,14 +1,15 @@
-<div
-  style="display: flex; flex-direction: column"
-  *ngIf="this.pokemonList.length > 0"
->
+<div class="principal" *ngIf="this.pokemonList.length > 0">
   <div *ngFor="let pokemon of this.pokemonList">
-    <img
-      src="{{ pokemon.sprites[0].sprites[0].sprites.front_default }}"
-      alt="pokemon.name"
-    />
-    <div>#{{ pokemon.id }}</div>
-    <div>Nome: {{ pokemon.name }}</div>
-    <div>Cor: {{ pokemon.color.name }}</div>
+    <div class="carta">
+      <div class="id">#{{ pokemon.id }}</div>
+      <img
+        src="{{ pokemon.sprites[0].sprites[0].sprites.front_default }}"
+        alt="Deu Ruim!"
+      />
+      <div class="nome">
+        Nome: {{ pokemon.name }} <br />
+        Cor: {{ pokemon.color.name }}
+      </div>
+    </div>
   </div>
 </div>

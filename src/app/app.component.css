@@ -1,0 +1,44 @@
+.principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -8px;
+    justify-content: space-around;
+    background-image: url("shared/5073414.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.carta{
+    text-align: center;
+    border: 20px white solid;
+    padding: 40px;
+    background-color: white;
+    margin-top: 14px;
+    margin-right: 5px;
+    height: 13.5em;
+    width: 5em ;
+    border-radius: 8px;
+    
+}
+
+.id{
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.nome{
+    background-color: white;
+    margin-top: 30px;
+    border: solid white;
+    border-top: 60em;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 20px;
+    font-size: 16px;   
+}
+
+
