@@ -12,9 +12,9 @@
 
 .carta{
     text-align: center;
-    border: 20px white solid;
+    border: 20px #EBBE71 solid;
     padding: 40px;
-    background-color: white;
+    background-color: #EBBE71;
     margin-top: 14px;
     margin-right: 5px;
     height: 13.5em;
@@ -24,21 +24,26 @@
 }
 
 .id{
-    background-color: white;
+    background-color: #EBBE71;
     margin-bottom: 30px;
     margin-left: -40px;
     margin-right: -40px;
 }
 
 .nome{
-    background-color: white;
+    background-color: #EBBE71;
     margin-top: 30px;
-    border: solid white;
+    border: solid #EBBE71;
     border-top: 60em;
     margin-left: -40px;
     margin-right: -40px;
     padding: 20px;
-    font-size: 16px;   
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.infos {
+    color: #0507EF;
 }
 
 

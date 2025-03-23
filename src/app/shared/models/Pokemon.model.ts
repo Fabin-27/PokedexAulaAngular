@@ -5,7 +5,6 @@ export class PokemonModel {
   public sprites: { sprites: Sprites[] }[];
 }
 
-
 export class Sprites {
     public sprites: Sprite
 }

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { PokemonModel } from '../models/Pokemon.model';
 import { PokemonHttpClient } from '../config/PokemonHttpClient';
 import { PokeApiResponse } from '../models/PokeApiResponse.model';
-import { map } from 'rxjs/operators'; // Importando o operador 'map'
+import { map } from 'rxjs/operators';
 
 
 
